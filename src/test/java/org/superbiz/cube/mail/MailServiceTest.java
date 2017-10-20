@@ -18,7 +18,7 @@ public class MailServiceTest {
 
         // when
         mailService.send("lollypop", "lolly.pop@mymail.com", "Invoice: 1234",
-            "Thank you very much for buy this product. Here you have your invoice");
+            "Thank you very much for buying this product. Here's your invoice");
 
         // then
         mailhog.should_receive_email_with_subject("Invoice: 1234");
